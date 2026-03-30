@@ -1,5 +1,6 @@
 /* Overall Page Background */
 body {
+  cursor: url('/assets/arrow.png'), pointer !important;
   background-color: #8db4e2; /* The classic Epsilon blue */
   margin: 0;
   padding: 20px 0;
@@ -7,17 +8,27 @@ body {
   color: #333;
 }
 
+a, 
+button, 
+.blue-side-btn, 
+.green-side-btn, 
+.donate-btn,
+input[type="submit"],
+.clickable {
+    cursor: url('/assets/pointer.cur'), pointer !important;
+}
+
 /* White Content Container */
 .main-container {
-    width: 900px;
-    margin: 0 auto;
-    background-color: white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    
-    /* NEW: Anchor footer logic */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensure it's at least as tall as the screen */
+  width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  /* NEW: Anchor footer logic */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure it's at least as tall as the screen */
 }
 
 /* Header & Tagline */
@@ -78,9 +89,9 @@ body {
 
 /* Layout for Sidebar + Content */
 .content-wrapper {
-    display: flex;
-    padding: 20px;
-    flex: 1; /* NEW: This tells the content to grow and push the footer down */
+  display: flex;
+  padding: 20px;
+  flex: 1; /* NEW: This tells the content to grow and push the footer down */
 }
 
 .sidebar {
@@ -184,10 +195,10 @@ li {
 }
 
 .site-footer {
-    width: 100%;
-    height: 80px;
-    margin-top: auto; /* Push to the very bottom of the flex container */
-    overflow: hidden;
+  width: 100%;
+  height: 80px;
+  margin-top: auto; /* Push to the very bottom of the flex container */
+  overflow: hidden;
 }
 
 .site-footer img {
@@ -211,17 +222,17 @@ li {
 }
 
 .epsilon-logo {
-    display: flex;
-    justify-content: center; /* Centers horizontally in a flex container */
-    align-items: center;
-    width: 100%; /* Ensures the container spans the full width of the sidebar */
-    margin-top: 20px; /* Provides spacing from the green button */
+  display: flex;
+  justify-content: center; /* Centers horizontally in a flex container */
+  align-items: center;
+  width: 100%; /* Ensures the container spans the full width of the sidebar */
+  margin-top: 20px; /* Provides spacing from the green button */
 }
 
 .epsilon-logo img {
-    width: 20px; /* Matches the small scale seen in the screenshots */
-    height: auto;
-    display: block;
+  width: 20px; /* Matches the small scale seen in the screenshots */
+  height: auto;
+  display: block;
 }
 
 .epsilon-form {
